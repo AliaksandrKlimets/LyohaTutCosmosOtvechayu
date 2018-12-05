@@ -9164,11 +9164,10 @@
       ]
     },
     "System.Diagnostics.TraceSource/4.0.0": {
-      "sha512": "bGUeY5wiCHYSWbYZS3QjbaQ1hNoJ1RQBQMB3E0Cgh6AH//4rXfXIOHKIW46HDOsTEDoNfvFNDXphL5W5B/XMwQ==",
+      "sha512": "6WVCczFZKXwpWpzd/iJkYnsmWTSFFiU24Xx/YdHXBcu+nFI/ehTgeqdJQFbtRPzbrO3KtRNjvkhtj4t5/WwWsA==",
       "type": "package",
       "path": "system.diagnostics.tracesource/4.0.0",
       "files": [
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10144,11 +10143,10 @@
       ]
     },
     "System.Net.NameResolution/4.0.0": {
-      "sha512": "gwBjwj3HNnHBBbSQtKdLZtn3+wAJIRPOlA/7iCNhIW7qcWWjlaLQd79AUlmTEc6pArB7uLWBTe7UmyemgUJFqQ==",
+      "sha512": "JdqRdM1Qym3YehqdKIi5LHrpypP4JMfxKQSNCJ2z4WawkG0il+N3XfNeJOxll2XrTnG7WgYYPoeiu/KOwg0DQw==",
       "type": "package",
       "path": "system.net.nameresolution/4.0.0",
       "files": [
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10185,11 +10183,10 @@
       ]
     },
     "System.Net.NetworkInformation/4.1.0": {
-      "sha512": "+T5VWTUKqKM+bM8Acas6lFOxKTn47xSfKepPBDuxWQ8pwmDJd17UqYuTL0f6hl/eq5qxeLcso+Q0Jb/evYl5oQ==",
+      "sha512": "Q0rfeiW6QsiZuicGjrFA7cRr2+kXex0JIljTTxzI09GIftB8k+aNL31VsQD1sI2g31cw7UGDTgozA/FgeNSzsQ==",
       "type": "package",
       "path": "system.net.networkinformation/4.1.0",
       "files": [
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10336,11 +10333,10 @@
       ]
     },
     "System.Net.Requests/4.0.11": {
-      "sha512": "qNQBFFZsSX63hK3TKVJsnBa9WWP8Nwyzo9iFFHBF49FAeGANGNxB6ECedbWVODbUUOdnhQpwC0Wd/WGw84pv8Q==",
+      "sha512": "vxGt7C0cZixN+VqoSW4Yakc1Y9WknmxauDqzxgpw/FnBdz4kQNN51l4wxdXX5VY1xjqy//+G+4CvJWp1+f+y6Q==",
       "type": "package",
       "path": "system.net.requests/4.0.11",
       "files": [
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -10485,11 +10481,10 @@
       ]
     },
     "System.Net.WebHeaderCollection/4.0.1": {
-      "sha512": "uhHcCDWjrpuEM1BbMKk5NV6Ya7GCg9vO0udwG/ev9ZmJXMDhOgqVWVjyazEVMOKtl7Qbt8r/2Yo4o/xYb6lANQ==",
+      "sha512": "XX2TIAN+wBSAIV51BU2FvvXMdstUa8b0FBSZmDWjZdwUMmggQSifpTOZ5fNH20z9ZCg2fkV1L5SsZnpO2RQDRQ==",
       "type": "package",
       "path": "system.net.webheadercollection/4.0.1",
       "files": [
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12575,11 +12570,10 @@
       ]
     },
     "System.Threading.Overlapped/4.0.1": {
-      "sha512": "UeBx2TvawhzKeyUOMZbfpsBgofJ1gypHqfTIhJNS+lxhpO3dw2yUPPri2uBMnxsXOZqYj+rnBC4XvmkSYmyqSw==",
+      "sha512": "f7aLuLkBoCQM2kng7zqLFBXz9Gk48gDK8lk1ih9rH/1arJJzZK9gJwNvPDhL6Ps/l6rwOr8jw+4FCHL0KKWiEg==",
       "type": "package",
       "path": "system.threading.overlapped/4.0.1",
       "files": [
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net46/System.Threading.Overlapped.dll",
@@ -13183,23 +13177,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fakef\\.nuget\\packages\\": {},
+    "C:\\Users\\Alexey\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ЛАБЫ\\ссп\\космос\\LyohaDerzhiLabu\\222\\222.csproj",
+      "projectUniqueName": "D:\\SSP_cosmosdb\\LyohaTutCosmosOtvechayu\\222\\222.csproj",
       "projectName": "222",
-      "projectPath": "E:\\ЛАБЫ\\ссп\\космос\\LyohaDerzhiLabu\\222\\222.csproj",
-      "packagesPath": "C:\\Users\\fakef\\.nuget\\packages\\",
-      "outputPath": "E:\\ЛАБЫ\\ссп\\космос\\LyohaDerzhiLabu\\222\\obj\\",
+      "projectPath": "D:\\SSP_cosmosdb\\LyohaTutCosmosOtvechayu\\222\\222.csproj",
+      "packagesPath": "C:\\Users\\Alexey\\.nuget\\packages\\",
+      "outputPath": "D:\\SSP_cosmosdb\\LyohaTutCosmosOtvechayu\\222\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\fakef\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alexey\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

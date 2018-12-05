@@ -31,18 +31,28 @@ namespace _222.Services
             client = new DocumentClient(new Uri(config.Endpoint), config.AuthKey);
             collectionUri = UriFactory.CreateDocumentCollectionUri(config.Database, config.UserCollection);
             this.CreateDatabaseIfNotExists(config.Database).Wait();
+            Console.WriteLine("DBG AHR11");
             this.CreateDocumentCollectionIfNotExists(config.Database, config.UserCollection).Wait();
+            Console.WriteLine("DBG AHR22");
+        }
+
+        public string CreateItem(User NewItem)
+        {
+            string NewID = Guid.NewGuid().ToString();
+            NewItem.Id = NewID;
+            client.CreateDocumentAsync(collectionUri, NewItem).Wait();
+            return NewID;
         }
 
         public async Task<User> FindOnLoginAsync(string email, string passwordString)
         {
             List<User> users = client.CreateDocumentQuery<User>(collectionUri).ToList<User>();
-            Console.Write("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaaaBBBB");
+            Console.Write("DBG AHR 1");
             foreach (var user in users)
             {
                 Console.Write(user.Email);
                 Console.Write(user.Password);
-                Console.Write("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaaa");
+                Console.Write("DBG AHR 2");
                 if (user.Email.Equals(email) && user.Password.Equals(passwordString))
                 {
                     return user;
@@ -53,18 +63,6 @@ namespace _222.Services
         }
 
 
-        public async Task CreateAsync(RegisterViewModel model)
-        {
-            User user = new User()
-            {
-                Email = model.Email,
-                Name = model.Name,
-                Surname = model.Surname,
-                Password = model.PasswordString
-            };
-
-
-        }
 
         public async Task<bool> IsEmailExistAsync(string email)
         {
@@ -95,7 +93,6 @@ namespace _222.Services
                 }
             }
         }
-
 
         private async Task CreateDocumentCollectionIfNotExists(string databaseName, string collectionName)
         {

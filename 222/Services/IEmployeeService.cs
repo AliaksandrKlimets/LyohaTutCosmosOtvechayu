@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _222.Services
 {
-    interface IEmployeeService
+    public interface IEmployeeService
 {
         IEnumerable<Employee> GetAll(string name, string sort);
         void Create(CreateModel model);

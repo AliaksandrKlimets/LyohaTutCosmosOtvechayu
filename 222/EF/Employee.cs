@@ -9,7 +9,7 @@ namespace _222.EF
     public class Employee
 {
         [Key]
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         [MaxLength(100)]
         public string Name { get; set; }

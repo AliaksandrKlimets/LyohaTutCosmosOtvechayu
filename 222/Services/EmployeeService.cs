@@ -13,7 +13,7 @@ using Microsoft.Azure.Documents;
 using Microsoft.Azure.Documents.Client;
 using Microsoft.Extensions.Options;
 using System.Net;
-
+using Employee = _222.EF.Employee;
 
 namespace _222.Services
 {
@@ -145,7 +145,7 @@ namespace _222.Services
                 hash += string.Format("{0:x2}", b);
             return hash;
         }
-    
+
         private async Task CreateDatabaseIfNotExists(string databaseName)
         {
             try
@@ -196,5 +196,3 @@ namespace _222.Services
         }
     }
 }
-
-
