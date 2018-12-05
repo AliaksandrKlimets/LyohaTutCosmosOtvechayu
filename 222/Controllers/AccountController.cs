@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using _222.Models;
+using _222.EF;
 using _222.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -27,6 +28,7 @@ namespace _222.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (!ModelState.IsValid)
@@ -75,7 +77,7 @@ namespace _222.Controllers
             }
             else
             {
-                await _userService.CreateAsync(model);
+                _userService.CreateItem(new User { Email = model.Email, Name = model.Name, Surname = model.Surname, Password = model.PasswordString });
                 return View("Login");
             }
         }

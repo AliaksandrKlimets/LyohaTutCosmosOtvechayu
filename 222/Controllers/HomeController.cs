@@ -10,16 +10,18 @@ using _222.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 
 namespace _222.Controllers
 {
     [Authorize(AuthenticationSchemes =CookieAuthenticationDefaults.AuthenticationScheme)]
     public class HomeController : Controller
     {
-       
+
         IEmployeeService _employeeService;
 
-        public HomeController(EmployeeService service)
+
+        public HomeController(IEmployeeService service)
         {
             _employeeService = service;
         }
@@ -61,6 +63,6 @@ namespace _222.Controllers
             _employeeService.Delete(id);
             return RedirectToAction("Index");
         }
-      
+
     }
 }

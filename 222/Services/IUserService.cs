@@ -10,7 +10,7 @@ namespace _222.Services
     public interface IUserService
 {
          Task<User> FindOnLoginAsync(string email, string passwordString);
-         Task CreateAsync(RegisterViewModel model);
-        Task<bool> IsEmailExistAsync(string email);
+         string CreateItem(User newItem);
+         Task<bool> IsEmailExistAsync(string email);
 }
 }
